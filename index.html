@@ -1,1 +1,65 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Cancer care prototype</title>
+</head>
+
+<body>
+    <div style="height: 200px;">
+        <h1>Velkomen tilbake</h1>
+    </div>
+
+    <div>
+        <div class="grid-container">
+            <div id="sympbtn" class="indexCard">Symptomer</div>
+            <div id="treatbtn" class="indexCard">Min behandling</div>
+            <div id="impbtn" class="indexCard">Viktig info</div>
+            <div id="calbtn" class="indexCard">Kalender</div>
+            <div id="altbtn" class="indexCard">Alternativer</div>
+            <div class="indexCard">Viktig info</div>
+        </div>
+    </div>
+    <div class="nav-bar">
+        <div id="btnHome" class="navCard">Hjem</div>
+        <div class="navCard">Viktig info</div>
+        <div class="navCard">Symptomer</div>
+        <div class="navCard">Min behandling</div>
+    </div>
+
+    <script>
+        const sympbtn = document.getElementById("sympbtn")
+        const treatbtn = document.getElementById("treatbtn")
+        const impbtn = document.getElementById("impbtn")
+        const calbtn = document.getElementById("calbtn")
+        const altbtn = document.getElementById("altbtn")
+
+        sympbtn.addEventListener("click", () => {
+            window.location.href = "symptoms.html"
+        });
+
+        treatbtn.addEventListener("click", () => {
+            window.location.href = "treatment.html"
+        });
+
+        impbtn.addEventListener("click", () => {
+            window.location.href = "important.html"
+        });
+
+        calbtn.addEventListener("click", () => {
+            window.location.href = "calender.html"
+        });
+
+        altbtn.addEventListener("click", () => {
+            window.location.href = "alternatives.html"
+        });
+
+
+    </script>
+</body>
+
+
+</html>
