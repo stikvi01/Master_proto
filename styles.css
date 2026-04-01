@@ -65,11 +65,25 @@
   overflow: hidden;
   transition: max-height 0.3s ease;
   padding-left: 15px;
+  padding-right: 15px;
   background-color: #333;
   
 }
 
 /* Show when checked */
 .symptoms input:checked + label + .content {
-  max-height: 100px; /* adjust if needed */
+  max-height: 900px; /* adjust if needed */
+}
+
+.pBold{
+    font-weight: bold;
+}
+
+.pLink{
+    color: blue;
+    text-decoration: underline;
+}
+.pImportant{
+    font-weight: bold;
+    color: red;
 }
