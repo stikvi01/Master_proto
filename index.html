@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Cancer care prototype</title>
 </head>
 
@@ -18,16 +19,16 @@
             <div id="sympbtn" class="indexCard">Symptomer</div>
             <div id="treatbtn" class="indexCard">Min behandling</div>
             <div id="impbtn" class="indexCard">Viktig info</div>
-            <div id="calbtn" class="indexCard">Kalender</div>
+            <div id="calbtn" class="indexCard">Neste time</div>
             <div id="altbtn" class="indexCard">Alternativer</div>
-            <div class="indexCard">Viktig info</div>
+            <div id="plussbtn" class="indexCard">+</div>
         </div>
     </div>
     <div class="nav-bar">
-        <div id="btnHome" class="navCard">Hjem</div>
-        <div class="navCard">Viktig info</div>
-        <div class="navCard">Symptomer</div>
-        <div class="navCard">Min behandling</div>
+        <div id="btnHome" class="navCard"><i class="fa fa-home" aria-hidden="true"></i></div>
+        <div id="btnCalender" class="navCard"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+        <div id="btnInbox" class="navCard"><i class="fa fa-commenting" aria-hidden="true"></i></div>
+        <div id="btnProfile" class="navCard"><i class="fa fa-user" aria-hidden="true"></i></div>
     </div>
 
     <script>
@@ -36,6 +37,11 @@
         const impbtn = document.getElementById("impbtn")
         const calbtn = document.getElementById("calbtn")
         const altbtn = document.getElementById("altbtn")
+
+        const btnHome = document.getElementById("btnHome");
+        const btnCalender = document.getElementById("btnCalender");
+        const btnInbox = document.getElementById("btnInbox");
+        const btnProfile = document.getElementById("btnProfile")
 
         sympbtn.addEventListener("click", () => {
             window.location.href = "symptoms.html"
@@ -50,11 +56,27 @@
         });
 
         calbtn.addEventListener("click", () => {
-            window.location.href = "calender.html"
+            window.location.href = "nextApt.html"
         });
 
         altbtn.addEventListener("click", () => {
             window.location.href = "alternatives.html"
+        });
+
+         btnHome.addEventListener("click", () => {
+            window.location.href = "index.html"
+        });
+
+         btnCalender.addEventListener("click", () => {
+            window.location.href = "calender.html"
+        });
+
+         btnInbox.addEventListener("click", () => {
+            window.location.href = "inbox.html"
+        });
+
+         btnProfile.addEventListener("click", () => {
+            window.location.href = "profile.html"
         });
 
 

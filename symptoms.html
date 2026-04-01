@@ -5,21 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Symptom page</title>
     <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="nav-bar">
-        <div id="btnHome" class="navCard">Hjem</div>
-        <div class="navCard">Viktig info</div>
-        <div class="navCard">Symptomer</div>
-        <div class="navCard">Min behandling</div>
+    <h1>Symptomer</h1>
+    <ul class="symptoms">
+  <li>
+    <input type="checkbox" id="item1">
+    <label for="item1"> Item 1</label>
+    <div class="content">
+      <p>More details about Item 1...</p>
+    </div>
+  </li>
+
+  <li>
+    <input type="checkbox" id="item2">
+    <label for="item2"> Item 2</label>
+    <div class="content">
+      <p>More details about Item 2...</p>
+    </div>
+  </li>
+
+  <li>
+    <input type="checkbox" id="item3">
+    <label for="item3"> Item 3</label>
+    <div class="content">
+      <p>More details about Item 3...</p>
+    </div>
+  </li>
+</ul>
+     <div class="nav-bar">
+        <div id="btnHome" class="navCard"><i class="fa fa-home" aria-hidden="true"></i></div>
+        <div id="btnCalender" class="navCard"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+        <div id="btnInbox" class="navCard"><i class="fa fa-commenting" aria-hidden="true"></i></div>
+        <div id="btnProfile" class="navCard"><i class="fa fa-user" aria-hidden="true"></i></div>
     </div>
       <script>
-        const btnHome = document.getElementById("btnHome")
+        const btnHome = document.getElementById("btnHome");
+        const btnCalender = document.getElementById("btnCalender");
+        const btnInbox = document.getElementById("btnInbox");
+        const btnProfile = document.getElementById("btnProfile")
         
-        btnHome.addEventListener("click", () => {
+         btnHome.addEventListener("click", () => {
             window.location.href = "index.html"
         });
-        
+
+         btnCalender.addEventListener("click", () => {
+            window.location.href = "calender.html"
+        });
+
+         btnInbox.addEventListener("click", () => {
+            window.location.href = "inbox.html"
+        });
+
+         btnProfile.addEventListener("click", () => {
+            window.location.href = "profile.html"
+        });
+
 
     </script>
 </body>
