@@ -1,89 +1,182 @@
 
-
+body{
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    margin: 30px auto;
+}
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 120px); 
-    gap: 20px;                               
-    justify-content: center; 
-    
+   
+    grid-template-columns: repeat(3, 115px);
+    gap: 15px;
+    justify-content: center;
 }
-#plussbtn{
+
+#plussbtn {
     font-size: 70px;
 }
- .indexCard {
+
+.indexCard {
     display: flex;
     justify-content: center;
-    align-items: center;      
-    height: 120px;
-    width: 120px;
+    align-items: center;
+    height: 115px;
+    width: 115px;
     background-color: #769382;
     border-radius: 15px;
-    
+
 }
 
 .nav-bar {
-    position: fixed;    
-    bottom: 0;          
-    left: 0;         
-    width: 100%;        
-    height: 60px;       
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
     background-color: #333;
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-around; /* optional */
-    z-index: 1000;   
-    font-size: xx-large;   /* make sure it’s on top of other content */
+    justify-content: space-around;
+    /* optional */
+    z-index: 1000;
+    font-size: xx-large;
+    /* make sure it’s on top of other content */
 }
 
-.symptoms {
-  list-style: none;
-  padding: 0;
+.symptoms {  
+    list-style: none;
+    padding: 0;
 }
 
 .symptoms li {
-  margin-bottom: 10px;
-  background-color: #769382;
-  
+    margin-bottom: 10px;
+    background-color: #769382;
+
 }
 
 /* Hide checkbox */
 .symptoms input {
-  display: none;
+    display: none;
 }
 
 /* Clickable label */
 .symptoms label {
-  cursor: pointer;
-  font-weight: bold;
-  display: block;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
 }
 
 /* Hidden content */
 .content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: #333;
-  
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #333;
+
 }
 
 /* Show when checked */
-.symptoms input:checked + label + .content {
-  max-height: 900px; /* adjust if needed */
+.symptoms input:checked+label+.content {
+    max-height: 900px;
+    /* adjust if needed */
 }
 
-.pBold{
+.pBold {
     font-weight: bold;
 }
 
-.pLink{
+.pLink {
     color: blue;
     text-decoration: underline;
 }
-.pImportant{
+
+.pImportant {
     font-weight: bold;
     color: red;
+}
+
+.calendar {
+    font-family: sans-serif;
+    font-size: 24px;
+    width: 100%;
+}
+
+.month {
+    display: flex;
+    width: 90%;
+    background: #1abc9c;
+    color: white;
+    
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.weekdays,
+.days {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 10px;
+    
+}
+.days li {
+    
+    margin-bottom: 50px;
+}
+
+.days li:hover {
+    background: #eee;
+}
+
+.days .appointment {
+  position: relative; 
+}
+
+.days .appointment::after {
+  content: '';               
+  width: 10px;                
+  height: 10px;
+  background-color: rgb(99, 99, 99);     
+  border-radius: 50%;        
+  position: absolute;
+  bottom: -15px;               
+  left: 27%;                 
+  transform: translateX(-50%);
+}
+
+#infoMsg{
+  display: none;                
+  position: fixed;               
+  top: 50%;                     
+  left: 50%;                     
+  transform: translate(-50%, -50%); 
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px 24px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  z-index: 9999;                 
+  width: 300px;
+  
+}
+
+.inline{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.infoClose{
+    margin-top: 12px;
+  padding: 6px 10px;
+  cursor: pointer;
 }

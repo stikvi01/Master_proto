@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,136 @@
     <link href="styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-   
-     <div class="nav-bar">
+    <div id="infoMsg">
+        <button id="infoClose">✖</button>
+        <h3>Fredag 17. April</h1>
+            <p>14.30</p>
+            <div class="inline">
+                <p class="pBold">Formål:</p>
+                <p> Sjekke blodverdier før behandlingen</p>
+            </div>
+            <div class="inline">
+                <p class="pBold">Hva som skjer:</p>
+                <p>En sykepleier tar blodprøver</p>
+            </div>
+            <div class="inline"></div>
+            <p class="pBold">Hvorfor:</p>
+            <p>Resultatene avgjør om cellegift kan startes</p>
+    </div>
+    </div>
+
+    <div class="calendar">
+        <div class="month">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            <p>April 2026</p>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            <span id="current-date"></span>
+        </div>
+
+
+
+        <ul class="weekdays">
+            <li>Ma</li>
+            <li>Ti</li>
+            <li>On</li>
+            <li>To</li>
+            <li>Fr</li>
+            <li>Lø</li>
+            <li>Sø</li>
+        </ul>
+
+        <ul class="days">
+            <li></li>
+            <li></li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li id="nextApt" class="appointment">17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li class="appointment">26</li>
+            <li>27</li>
+            <li>28</li>
+            <li class="appointment">29</li>
+            <li>30</li>
+        </ul>
+    </div>
+
+    <div class="nav-bar">
         <div id="btnHome" class="navCard"><i class="fa fa-home" aria-hidden="true"></i></div>
         <div id="btnCalender" class="navCard"><i class="fa fa-calendar" aria-hidden="true"></i></div>
         <div id="btnInbox" class="navCard"><i class="fa fa-commenting" aria-hidden="true"></i></div>
         <div id="btnProfile" class="navCard"><i class="fa fa-user" aria-hidden="true"></i></div>
     </div>
-      <script>
+
+
+    <script>
         const btnHome = document.getElementById("btnHome");
         const btnCalender = document.getElementById("btnCalender");
         const btnInbox = document.getElementById("btnInbox");
-        const btnProfile = document.getElementById("btnProfile")
+        const btnProfile = document.getElementById("btnProfile");
+        const currentDate = document.getElementById("current-date");
+        const nextApt = document.getElementById("nextApt");
+        const infoMsg = document.getElementById("infoMsg");
+        const infoClose = document.getElementById("infoClose");
+
+        infoMsg.style.display = 'none';
         
-         btnHome.addEventListener("click", () => {
+        btnHome.addEventListener("click", () => {
             window.location.href = "index.html"
         });
 
-         btnCalender.addEventListener("click", () => {
+        btnCalender.addEventListener("click", () => {
             window.location.href = "calender.html"
         });
 
-         btnInbox.addEventListener("click", () => {
+        btnInbox.addEventListener("click", () => {
             window.location.href = "inbox.html"
         });
 
-         btnProfile.addEventListener("click", () => {
+        btnProfile.addEventListener("click", () => {
             window.location.href = "profile.html"
         });
+
+        nextApt.addEventListener("click", () => {
+            infoMsg.style.display = 'block';
+        });
+
+        infoClose.addEventListener("click", () => {
+            infoMsg.style.display = 'none';
+        });
+
+        currentDate.textContent = new Date().toLocaleDateString('nb-NO', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+
 
 
     </script>
 </body>
+
 </html>
