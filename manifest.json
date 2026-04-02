@@ -1,0 +1,32 @@
+{
+    "name": "Cancer Care Proto",
+    "short_name": "Prototype",
+    "start_url": "/Master_Proto/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#c5151c",
+    "description": "Prototype for master project",
+    "icons": [
+        {
+            "src": "fridge.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "background_color": "#ffffff"
+        },
+        {
+            "src": "fridge.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "background_color": "#ffffff"
+        }
+    ],
+    "splash_pages": null,
+    "orientation": "portrait",
+    "prefer_related_applications": false,
+    "related_applications": [],
+    "scope": "/Master_Proto/",
+    "serviceworker": {
+        "src": "service_workers.js",
+        "scope": "/"
+    }
+}
