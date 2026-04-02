@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,70 @@
     <link href="styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-   
-     <div class="nav-bar">
+
+    <h1>Neste time</h1>
+    <h3>17. April 14.30</h3>
+    <p class="pBold">Formål:</p>
+    <p> Sjekke blodverdier før behandlingen for å sikre at kroppen tåler cellegiften.</p>
+    <p class="pBold">Hva som skjer:</p>
+
+    <ul>
+        <li>En sykepleier tar en blodprøve fra armen, eller fra port-a-cath hvis du har det.</li>
+        <li>Blodprøven sendes til laboratoriet, og resultatene analyseres.</li>
+        <li>Legen vurderer om det er trygt å starte cellegiften.</li>
+        <li>Sykepleieren kan gi deg rask informasjon om hvordan prøven gikk, men den endelige vurderingen 
+        kommer fra legen.</li>
+        <li>Om prøvene ser bra ut kan cellegiftkuren tas som planlagt, 
+        om de ikke gjør det må kuren utsettes og en ny blodprøve vil planlegges.</li>
+    </ul>
+
+    <p>Om cellegiftkuren blir utsettet er det for å gi kroppen tid til å lege beinmargen og for å lage flere blodceller. 
+    Dette er helt nødvendig da blodcellene blir skadet av cellegiftkuren, og kroppen trenger derfor å ha nok til å 
+    gjennom cellegiften. 
+    </p>
+    
+    <p class="pBold">Tips til timen:</p>
+    <ul>
+        <li>Spis en lett frokost, men unngå tung mat rett før prøven.</li>
+        <li>Drikk rikelig med vann – det gjør det lettere å ta blodprøven.</li>
+        <li>Ha på korte ermer eller klær som lett kan rulles opp.</li>
+        <li>Ta med noe å gjøre mens du venter, for eksempel bok, musikk eller telefon.</li>
+        <li>Det kan være lurt å notere spørsmål om blodverdier eller behandling, så du får med deg alt når legen 
+            forklarer resultatene. </li>
+    </ul>
+
+    <div class="nav-bar">
         <div id="btnHome" class="navCard"><i class="fa fa-home" aria-hidden="true"></i></div>
         <div id="btnCalender" class="navCard"><i class="fa fa-calendar" aria-hidden="true"></i></div>
         <div id="btnInbox" class="navCard"><i class="fa fa-commenting" aria-hidden="true"></i></div>
         <div id="btnProfile" class="navCard"><i class="fa fa-user" aria-hidden="true"></i></div>
     </div>
-      <script>
+    <script>
         const btnHome = document.getElementById("btnHome");
         const btnCalender = document.getElementById("btnCalender");
         const btnInbox = document.getElementById("btnInbox");
         const btnProfile = document.getElementById("btnProfile")
-        
-         btnHome.addEventListener("click", () => {
+
+        btnHome.addEventListener("click", () => {
             window.location.href = "index.html"
         });
 
-         btnCalender.addEventListener("click", () => {
+        btnCalender.addEventListener("click", () => {
             window.location.href = "calender.html"
         });
 
-         btnInbox.addEventListener("click", () => {
+        btnInbox.addEventListener("click", () => {
             window.location.href = "inbox.html"
         });
 
-         btnProfile.addEventListener("click", () => {
+        btnProfile.addEventListener("click", () => {
             window.location.href = "profile.html"
         });
 
 
     </script>
 </body>
+
 </html>
