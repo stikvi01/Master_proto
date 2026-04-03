@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,101 @@
     <link href="styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-   
-     <div class="nav-bar">
+    <h1>Viktig informasjon</h1>
+    <h3>Det kan være nødvendig å ta kontakt med lege eller sykepleier dersom:</h3>
+    <ul class="pImportant">
+        <li>Ved feber over 38 grader mellom kurene må lege kontaktes umiddelbart.</li>
+        <li>Om du har frostrier</li>
+        <li>Blør fra slimhinner som i nese og munn</li>
+        <li>Du har oppkast mer enn tre ganger i døgnet</li>
+        <li>At du har kvalme som reduserer inntak av mat over flere dager</li>
+        <li>Du har diaré eller løs avføring mer enn fire ganger i døgnet</li>
+        <li>Du har blod i avføringen</li>
+        <li>Du har forstoppelse</li>
+        <li>Du har sårhet og smerter i munnen som reduserer inntak av mat</li>
+        <li>Vanskeligheter med å gå opp og ned trapper</li>
+        <li>Om du faller uten en direkte grunn</li>
+    </ul>
+
+    <h3>Feber</h3>
+
+    <p>Feber kan være et tegn på infeksjon, det er derfor viktig å å måle temperaturen om man fryser eller føler seg
+        dårlig. Selv lav feber skal tas alvorlig.</p>
+    <p class="pImportant">Er temperaturen 38.0 eller mer eller du har frostrier, må du raskt ta kontakt med ditt
+        nærmeste
+        lokalsykehus, uansett tid på døgnet.
+        Det er viktig å oppgi at du får cellegiftbehandling og når du fikk siste kur.</p>
+
+    <h3>Munn hygiene</h3>
+    <p>Cellegift behandling kan gi bivirkninger i munnhulen i form av såre slimhinner, munntørrhet, soppinfeksjoner og
+        smaksforandringer.
+        Det er viktig å opprettholde så god munnhygiene som mulig under behandlingen.Etter kreftbehandling anbefales
+        regelmessig besøk hos
+        tannlege / tannpleier. Opplys alltid om behandlingen du har fått. Fortsett med god munnhygiene og
+        fluorprodukter.</p>
+    <p class="pBold">Forebygging lønner seg og det kan være lurt å ta noen forhåndsregler:</p>
+    <ul>
+        <li>Rengjør munnen grundig med myk tannbørste og tannkrem uten såpestoff</li>
+        <li>Bruk ekstra fluortilskudd</li>
+        <li>Unngå bruk av tobakk og alkohol</li>
+        <li>Se opp for bivikninger som sårhet in slimhinnene, såre lepper, munn tørrhet, tap av eller endret smaksans og
+            soppinfeksjoner</li>
+    </ul>
+
+    <h3>Medisiner</h3>
+    <p>Noen medisiner kan virke inn på effekten av kjemoterapi, og derfor bør du snakke med lege om hvilke medisiner du
+        bruker.
+        Dette gjelder også helsekostartikler, vitaminer og lignende. </p>
+    <h3>Personlig hygiene</h3>
+    <p>2-3 dager etter cellegiftkuren vil avfalstoffer skilles ut av kroppen gjennom blod, urin avføring og evt. oppast
+        og svette.
+        Dette skal som regel ikke være en risiko for venner og familie og man kan stort sett leve som normalt. Uansett
+        kan det være lurt å
+        ha noen forhåndsregler for alles sikkerhet.</p>
+    <ul>
+        <li>God toaletthygiene. Skyll ned to ganger</li>
+        <li>God håndhygiene etter toalettbesøk, bruk ren¬nende vann og såpe.</li>
+        <li>Ved evt. søl, bruk papir til å tørke opp rester av avføring eller urin, og vask deretter med såpe og vann.
+            Ved tilsøling av huden bør den vaskes med såpe og vann.</li>
+        <li>Klær som tilsøles av urin, avføring eller oppkast, bør vaskes med en gang.</li>
+        <li>Legg bleier, bind og annet søppel i en plastpose og knytt godt igjen før det kastes i søpla.</li>
+        <li>Skift sengetøy etter 3 dager, sengetøyet vaskes på vanlig måte.</li>
+    </ul>
+
+
+
+    <div class="nav-bar">
         <div id="btnHome" class="navCard"><i class="fa fa-home" aria-hidden="true"></i></div>
         <div id="btnCalender" class="navCard"><i class="fa fa-calendar" aria-hidden="true"></i></div>
         <div id="btnInbox" class="navCard"><i class="fa fa-commenting" aria-hidden="true"></i></div>
         <div id="btnProfile" class="navCard"><i class="fa fa-user" aria-hidden="true"></i></div>
     </div>
-      <script>
+    <script>
         const btnHome = document.getElementById("btnHome");
         const btnCalender = document.getElementById("btnCalender");
         const btnInbox = document.getElementById("btnInbox");
         const btnProfile = document.getElementById("btnProfile")
-        
-         btnHome.addEventListener("click", () => {
+
+        btnHome.addEventListener("click", () => {
             window.location.href = "index.html"
         });
 
-         btnCalender.addEventListener("click", () => {
+        btnCalender.addEventListener("click", () => {
             window.location.href = "calender.html"
         });
 
-         btnInbox.addEventListener("click", () => {
+        btnInbox.addEventListener("click", () => {
             window.location.href = "inbox.html"
         });
 
-         btnProfile.addEventListener("click", () => {
+        btnProfile.addEventListener("click", () => {
             window.location.href = "profile.html"
         });
 
 
     </script>
 </body>
+
 </html>
