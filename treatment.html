@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,132 @@
     <link href="styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-   
-     <div class="nav-bar">
+    <h1>Min behandling</h1>
+    <h2>Cellegift</h2>
+    <div>
+        <h3>Kurer gjennomført:</h3>
+        <h1 style="font-size: 50px;">7/10</h1>
+        <h3>Neste kur: 17. April</h3>
+    </div>
+    <h3>Behandlingforløp</h3>
+    <div class="gantt">
+        <div class="timeline">
+            <div class="time-slot">Nov</div>
+            <div class="time-slot">Des</div>
+            <div class="time-slot">Jan</div>
+            <div class="time-slot">Feb</div>
+            <div class="time-slot">Mar</div>
+            <div class="time-slot">Apr</div>
+            <div class="time-slot">Mai</div>
+            <div class="time-slot">Jun</div>
+            <div class="time-slot">Jul</div>
+
+        </div>
+
+        <div class="row">
+            <div class="label">Utrednig</div>
+            <div class="bar" style="grid-column: 1 / 2;"> </div>
+        </div>
+
+        <div class="row">
+            <div class="label">Behandlingsplan</div>
+            <div class="bar" style="grid-column: 2 / 3;"> </div>
+        </div>
+
+        <div class="row">
+            <div class="label">Behandling</div>
+            <div class="bar" style="grid-column: 2 / 9;"> </div>
+        </div>
+
+        <div class="row">
+            <div class="label">Oppføling og videre planegging</div>
+            <div class="bar" style="grid-column: 9 / 11;"> </div>
+        </div>
+    </div>
+    <h3>Om behandlingen</h3>
+    <ul class="symptoms">
+        <li>
+            <input type="checkbox" id="item1">
+            <label for="item1"> Hva er cellegift</label>
+            <div class="content">
+                <p>Cellegift er medisiner som brukes for å behandle kreft. De virker ved å stoppe kreftceller fra å dele
+                    seg og vokse. Cellegift kan også påvirke noen friske celler, og derfor kan man få bivirkninger som
+                    hårtap,
+                    kvalme eller tretthet.</p>
+                <p>Cellegift kan tas på ulike måter, for eksempel som sprøyte i blodet, tabletter eller kapsler.
+                    Legen bestemmer hvilken type og hvor ofte du får den, avhengig av hvilken kreftsykdom du har.</p>
+                <p class="pBold">Hva er målet:</p>
+                <ul>
+                    <li>Å krympe eller fjerne svulster</li>
+                    <li>Å hindre kreften i å spre seg</li>
+                    <li>Å lindre symptomer og gjøre deg bedre i hverdagen</li>
+                </ul>
+            </div>
+        </li>
+
+        <li>
+            <input type="checkbox" id="item2">
+            <label for="item2"> Medesiner</label>
+            <div class="content">
+                <p>Det er ikke lagt til noen medesiner enda.</p>
+            </div>
+        </li>
+
+        <li>
+            <input type="checkbox" id="item3">
+            <label for="item3"> Behandlingsted</label>
+            <div class="content">
+                <p>Behandlingen vil fåregå på St. Olavs hospital ved Gastrosenteret. De kliniske avdelinger er i
+                    midtfløyen på Gastrosenteret, etasjer M1-M4.</p>
+
+                <p>Samtidig er Vardesenteret og Pusterommet tilbud ved St. Olavs hospital. Her vil du kunne motta
+                    informasjon, støtte og veiledning, delta på
+                    kurs og aktiviteter, møte likesinnede, eller bare ha et sted å hvile/finne ro.
+                    Du trenger ikke henvisning til våre tilbud, bortsett fra Pusterommet som trenger henvisning fra
+                    sykehuslege eller fastlege. </p>
+
+            </div>
+        </li>
+
+    </ul>
+    <div class="grid-container">
+        <div id="treatbtn" class="indexCard">Prøve Resultater</div>
+        <div id="sympbtn" class="indexCard">Notater</div>
+        <div id="impbtn" class="indexCard">Dokumenter</div>
+    </div>
+
+    <div class="nav-bar">
         <div id="btnHome" class="navCard"><i class="fa fa-home" aria-hidden="true"></i></div>
         <div id="btnCalender" class="navCard"><i class="fa fa-calendar" aria-hidden="true"></i></div>
         <div id="btnInbox" class="navCard"><i class="fa fa-commenting" aria-hidden="true"></i></div>
         <div id="btnProfile" class="navCard"><i class="fa fa-user" aria-hidden="true"></i></div>
     </div>
-      <script>
+    <script>
         const btnHome = document.getElementById("btnHome");
         const btnCalender = document.getElementById("btnCalender");
         const btnInbox = document.getElementById("btnInbox");
         const btnProfile = document.getElementById("btnProfile")
-        
-         btnHome.addEventListener("click", () => {
+
+        btnHome.addEventListener("click", () => {
             window.location.href = "index.html"
         });
 
-         btnCalender.addEventListener("click", () => {
+        btnCalender.addEventListener("click", () => {
             window.location.href = "calender.html"
         });
 
-         btnInbox.addEventListener("click", () => {
+        btnInbox.addEventListener("click", () => {
             window.location.href = "inbox.html"
         });
 
-         btnProfile.addEventListener("click", () => {
+        btnProfile.addEventListener("click", () => {
             window.location.href = "profile.html"
         });
 
 
     </script>
 </body>
+
 </html>
