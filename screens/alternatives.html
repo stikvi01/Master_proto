@@ -11,28 +11,28 @@
 
 <body>
     <div class="card-container">
-        <div class="card">
+        <div id="btnPall" class="card">
             <img src="../img/Untitled_Artwork 27.jpg" alt="Card image">
             <div class="card-content">
                 <h3 class="card-title">Lindrende behandling</h3>
             </div>
         </div>
-       <div class="card">
+       <div id="btnImune" class="card">
             <img src="../img/Untitled_Artwork 27.jpg" alt="Card image">
             <div class="card-content">
-                <h3 class="card-title">Immun Terapi</h3>
+                <h3 class="card-title">Immunterapi</h3>
             </div>
         </div>
-        <div class="card">
+        <div id="btnRadi" class="card">
             <img src="../img/Untitled_Artwork 27.jpg" alt="Card image">
             <div class="card-content">
                 <h3 class="card-title">Stråle behandling</h3>
             </div>
         </div>
-         <div class="card">
+         <div id="btnSurg" class="card">
             <img src="../img/Untitled_Artwork 27.jpg" alt="Card image">
             <div class="card-content">
-                <h3 class="card-title">Opperasjon</h3>
+                <h3 class="card-title">Operasjon</h3>
             </div>
         </div>
     </div>
@@ -47,6 +47,10 @@
         const btnCalender = document.getElementById("btnCalender");
         const btnInbox = document.getElementById("btnInbox");
         const btnProfile = document.getElementById("btnProfile")
+        const btnImune = document.getElementById("btnImune");
+        const btnRadi = document.getElementById("btnRadi");
+        const btnPall = document.getElementById("btnPall");
+        const btnSurg = document.getElementById("btnSurg");
 
         btnHome.addEventListener("click", () => {
             window.location.href = "index.html"
@@ -62,6 +66,22 @@
 
         btnProfile.addEventListener("click", () => {
             window.location.href = "profile.html"
+        });
+
+        btnPall.addEventListener("click", () => {
+            window.location.href = "palliative.html"
+        });
+
+        btnImune.addEventListener("click", () => {
+            window.location.href = "immune.html"
+        });
+
+        btnRadi.addEventListener("click", () => {
+            window.location.href = "radiation.html"
+        });
+
+        btnSurg.addEventListener("click", () => {
+            window.location.href = "surgery.html"
         });
 
 
