@@ -10,26 +10,33 @@
 </head>
 
 <body>
+    <div class="filter-buttons">
+        <button onclick="filterCards('')">Vis alle</button>
+        <button onclick="filterCards('lindrende behandling')">Lindrende behandling</button>
+        <button onclick="filterCards('immunterapi')">Immunterapi</button>
+        <button onclick="filterCards('stråle behandling')">Stråle behandling</button>
+        <button onclick="filterCards('operasjon')">Operasjon</button>
+    </div>
     <div class="card-container">
-        <div id="btnPall" class="card">
+        <div id="btnPall" class="card" data-name="lindrende behandling">
             <img src="../img/Untitled_Artwork 27.jpg" alt="Card image">
             <div class="card-content">
                 <h3 class="card-title">Lindrende behandling</h3>
             </div>
         </div>
-       <div id="btnImune" class="card">
+        <div id="btnImune" class="card" data-name="immunterapi">
             <img src="../img/Untitled_Artwork 27.jpg" alt="Card image">
             <div class="card-content">
                 <h3 class="card-title">Immunterapi</h3>
             </div>
         </div>
-        <div id="btnRadi" class="card">
+        <div id="btnRadi" class="card" data-name="stråle behandling">
             <img src="../img/Untitled_Artwork 27.jpg" alt="Card image">
             <div class="card-content">
                 <h3 class="card-title">Stråle behandling</h3>
             </div>
         </div>
-         <div id="btnSurg" class="card">
+        <div id="btnSurg" class="card" data-name="operasjon">
             <img src="../img/Untitled_Artwork 27.jpg" alt="Card image">
             <div class="card-content">
                 <h3 class="card-title">Operasjon</h3>
@@ -51,6 +58,9 @@
         const btnRadi = document.getElementById("btnRadi");
         const btnPall = document.getElementById("btnPall");
         const btnSurg = document.getElementById("btnSurg");
+        const cards = document.querySelectorAll(".card");
+        let savedFilter = localStorage.getItem('selectedFilter') || '';
+        filterCards(savedFilter);
 
         btnHome.addEventListener("click", () => {
             window.location.href = "index.html"
@@ -85,6 +95,25 @@
         });
 
 
+
+
+
+        function filterCards(type) {
+            cards.forEach(card => {
+                const name = card.getAttribute("data-name");
+                if (type === "" || name === type) {
+                    card.style.display = "block";
+                }
+                else {
+                    card.style.display = "none";
+                }
+                localStorage.setItem('selectedFilter', type);
+
+            });
+            savedFilter = localStorage.getItem('selectedFilter') || '';
+            return savedFilter
+        };
+        
     </script>
 </body>
 
