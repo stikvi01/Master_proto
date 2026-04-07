@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom page</title>
+    <link href="../styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1>Ressurser</h1>
+    <p>Her finner du informasjon om tjenester, støtte og aktiviteter som kan hjelpe deg gjennom behandlingen og hverdagen.
+    Du kan få veiledning fra sosionom, ergoterapeut, fysioterapeut og ernæringsfysiolog, delta på aktiviteter, eller 
+    besøke Vardesenteret og Pusterommet for råd, kurs eller et sted å hvile. </p>
+    <p> Utforsk tilbudene under for å finne det som 
+    passer deg best. </p>
+    <ul class="symptoms">
+        <li>
+            <input type="checkbox" id="item1">
+            <label for="item1"> Sosionom</label>
+            <div class="content">
+                <p>Sosionomen kan hjelpe pasient og pårørende med praktiske og sosiale utfordringer ved sykdom og
+                behandling.</p>
+                <p class="pBold">Tilbudet inkluderer:</p>
+                <ul>
+                    <li>Informasjon, råd og veiledning om trygderettigheter, økonomi og forsikringer</li>
+                    <li>Veiledning om arbeid, skole og hjemmesituasjon</li>
+                    <li>Formidling av kontakt med hjelpeinstanser (f.eks. NAV, boligkontor, forsikringsselskaper)</li>
+                    <li>Støttesamtaler om følelsesmessige reaksjoner og livssituasjon</li>
+                    <li>Opplæring og undervisning for pasient, pårørende og samarbeidspartnere</li>
+                </ul>
+                <p class="pBold">Dette tilbudet trenger henvisning fra lege eller sykepleier.</p>
+            </div>
+        </li>
+
+        <li>
+            <input type="checkbox" id="item2">
+            <label for="item2">Ergoterapeut</label>
+            <div class="content">
+                <p>Ergoterapeuten kan bistå i kartlegging av aktivitet og deltakelse, tilrettelegging for hverdag og 
+                arbeid under og etter behandling.</p>
+
+                <p class="pBold">Tilbudet inkluderer:</p>
+                <ul>
+                    <li>Kartlegging av funksjon og aktivitetsutførelse, hjemme eller på arbeidsplass</li>
+                    <li>Veiledning om fatigue/utmattelse, energiregulering, mestringsstrategier, nevropati og seksualitet</li>
+                    <li>Vurdering av behov for hjelpemidler</li>
+                </ul>
+
+                <p class="pBold">Dette tilbudet trenger henvisning fra lege eller sykepleier.</p>
+            </div>
+        </li>
+
+        <li>
+            <input type="checkbox" id="item3">
+            <label for="item3">Fysioterapeut </label>
+            <div class="content">
+                 <p>Fysioterapeuten følger opp fysisk form, funksjon og plager under og etter behandling.</p>
+
+                <p class="pBold">Tilbudet inkluderer:</p>
+                <ul>
+                    <li>Individuell trening og gruppetrening (Pusterommet)</li>
+                    <li>Vurdering av smerter, hevelser, fatigue, nevropati og muskel-skjelettplager</li>
+                    <li>Oppfølging kan også skje via fysioterapeut i hjemkommune</li>
+                </ul>
+
+                <p class="pBold">Dette tilbudet trenger henvisning fra behandlende lege.</p>
+            </div>
+        </li>
+
+        <li>
+            <input type="checkbox" id="item4">
+            <label for="item4">Klinisk ernæringsfysiolog</label>
+            <div class="content">
+              <p>Ernæringsfysiologen kan vurdere ernæringsstatus og gi veiledning om kosthold under behandling.</p>
+
+                <p class="pBold">Tilbudet inkluderer:</p>
+                <ul>
+                    <li>Identifisering av ernæringsproblemer og forslag til målrettede tiltak</li>
+                    <li>Kartlegging via spørreskjema i HelsaMi før time</li>
+                    <li>Oppfølging av kroppsvekt og ernæring gjennom behandlingsforløpet</li>
+                </ul>
+                <p class="pBold">Dette tilbudet trenger henvisning fra lege eller sykepleier.</p>
+            </div>
+        </li>
+
+        <li>
+            <input type="checkbox" id="item5">
+            <label for="item5">Vardesenteret og Pusterommet</label>
+            <div class="content">
+                <p>Vardesenteret og pusterommet er en møteplass for pasienter, pårørende og etterlatte ved St. Olavs hospital.</p>
+
+                <p class="pBold">Tilbudet inkluderer:</p>
+                <ul>
+                    <li>Kosthold og ernæring</li>
+                    <li>Rehabilitering og mestring</li>
+                    <li>Samtaler, råd og veiledning (støttesamtaler, rettshjelp m.m.)</li>
+                    <li>Fysisk aktivitet (Pusterommet, turgruppe)</li>
+                    <li>Gratis lunsj på tirsdager og torsdager fra 11-13</li>
+                </ul>
+                <p class="pBold">Pusterommet krever henvisning, men Vardesenteret åpent for alle.</p>
+            </div>
+        </li>
+    </ul>
+    
+    <div class="nav-bar">
+        <div id="btnHome" class="navCard"><i class="fa fa-home" aria-hidden="true"></i></div>
+        <div id="btnCalender" class="navCard"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+        <div id="btnInbox" class="navCard"><i class="fa fa-commenting" aria-hidden="true"></i></div>
+        <div id="btnProfile" class="navCard"><i class="fa fa-user" aria-hidden="true"></i></div>
+    </div>
+    <script>
+        const btnHome = document.getElementById("btnHome");
+        const btnCalender = document.getElementById("btnCalender");
+        const btnInbox = document.getElementById("btnInbox");
+        const btnProfile = document.getElementById("btnProfile")
+
+        btnHome.addEventListener("click", () => {
+            window.location.href = "index.html"
+        });
+
+        btnCalender.addEventListener("click", () => {
+            window.location.href = "calender.html"
+        });
+
+        btnInbox.addEventListener("click", () => {
+            window.location.href = "inbox.html"
+        });
+
+        btnProfile.addEventListener("click", () => {
+            window.location.href = "profile.html"
+        });
+
+
+    </script>
+</body>
+
+</html>
