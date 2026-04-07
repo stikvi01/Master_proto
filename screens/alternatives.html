@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <button id="btnBack"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></button>
     <div class="filter-buttons">
         <button onclick="filterCards('')">Vis alle</button>
         <button onclick="filterCards('lindrende behandling')">Lindrende behandling</button>
@@ -58,6 +59,7 @@
         const btnRadi = document.getElementById("btnRadi");
         const btnPall = document.getElementById("btnPall");
         const btnSurg = document.getElementById("btnSurg");
+        const btnBack = document.getElementById("btnBack");
         const cards = document.querySelectorAll(".card");
         let savedFilter = localStorage.getItem('selectedFilter') || '';
         filterCards(savedFilter);
@@ -94,9 +96,9 @@
             window.location.href = "goal.html"
         });
 
-
-
-
+        btnBack.addEventListener("click", () => {
+            window.location.href = "treatmentNav.html"
+        });
 
         function filterCards(type) {
             cards.forEach(card => {
@@ -113,7 +115,7 @@
             savedFilter = localStorage.getItem('selectedFilter') || '';
             return savedFilter
         };
-        
+
     </script>
 </body>
 

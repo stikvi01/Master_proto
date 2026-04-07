@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <button id="btnBack"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></button>
     <h1>Min behandling</h1>
     <h2>Cellegift</h2>
     <div>
@@ -114,7 +115,8 @@
         const btnHome = document.getElementById("btnHome");
         const btnCalender = document.getElementById("btnCalender");
         const btnInbox = document.getElementById("btnInbox");
-        const btnProfile = document.getElementById("btnProfile")
+        const btnProfile = document.getElementById("btnProfile");
+        const btnBack = document.getElementById("btnBack");
 
         btnHome.addEventListener("click", () => {
             window.location.href = "index.html"
@@ -130,6 +132,10 @@
 
         btnProfile.addEventListener("click", () => {
             window.location.href = "profile.html"
+        });
+
+        btnBack.addEventListener("click", () => {
+            window.location.href = "treatmentNav.html"
         });
 
 

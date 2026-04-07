@@ -12,6 +12,13 @@ body{
     gap: 15px;
     justify-content: center;
 }
+.grid-container-2 {
+    display: grid;
+   
+    grid-template-columns: repeat(1, 250);
+    gap: 15px;
+    justify-content: center;
+}
 
 #plussbtn {
     font-size: 70px;
@@ -23,6 +30,16 @@ body{
     align-items: center;
     height: 115px;
     width: 115px;
+    background-color: #769382;
+    border-radius: 15px;
+
+}
+.indexCard2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 115px;
+    width: 250px;
     background-color: #769382;
     border-radius: 15px;
 

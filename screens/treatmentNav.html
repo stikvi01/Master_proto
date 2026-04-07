@@ -7,7 +7,7 @@
     <link href="../styles.css" rel="stylesheet">
     <link rel="manifest" href="../pwa/manifest.json">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Cancer care prototype</title>
+    <title>Treatment navigation</title>
 </head>
 
 <body>
@@ -16,13 +16,9 @@
     </div>
 
     <div>
-        <div class="grid-container">
-            <div id="sympbtn" class="indexCard">Bivirkninger</div>
-            <div id="treatbtn" class="indexCard">Behandling</div>
-            <div id="impbtn" class="indexCard">Viktig info</div>
-            <div id="calbtn" class="indexCard">Neste time</div>
-            <div id="resbtn" class="indexCard">Ressurser</div>
-            <div id="plussbtn" class="indexCard">+</div>
+        <div class="grid-container-2">
+            <div id="treatbtn" class="indexCard2">Min Behandling</div>
+            <div id="altbtn" class="indexCard2">Andre behandlinger</div>
         </div>
     </div>
     <div class="nav-bar">
@@ -33,35 +29,20 @@
     </div>
 
     <script>
-        const sympbtn = document.getElementById("sympbtn")
+      
         const treatbtn = document.getElementById("treatbtn")
-        const impbtn = document.getElementById("impbtn")
-        const calbtn = document.getElementById("calbtn")
-        const resbtn = document.getElementById("resbtn")
-
+        const altbtn = document.getElementById("altbtn")
         const btnHome = document.getElementById("btnHome");
         const btnCalender = document.getElementById("btnCalender");
         const btnInbox = document.getElementById("btnInbox");
         const btnProfile = document.getElementById("btnProfile")
 
-        sympbtn.addEventListener("click", () => {
-            window.location.href = "symptoms.html"
-        });
-
         treatbtn.addEventListener("click", () => {
-            window.location.href = "treatmentNav.html"
+            window.location.href = "treatment.html"
         });
 
-        impbtn.addEventListener("click", () => {
-            window.location.href = "important.html"
-        });
-
-        calbtn.addEventListener("click", () => {
-            window.location.href = "nextApt.html"
-        });
-
-        resbtn.addEventListener("click", () => {
-            window.location.href = "resources.html"
+        altbtn.addEventListener("click", () => {
+            window.location.href = "alternatives.html"
         });
 
          btnHome.addEventListener("click", () => {
