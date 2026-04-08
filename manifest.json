@@ -1,7 +1,7 @@
 {
     "name": "Cancer Care Proto",
     "short_name": "Prototype",
-    "start_url": "/Master_Proto/",
+    "start_url": "/Master_Proto/screens/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#c5151c",
