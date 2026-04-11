@@ -4,7 +4,104 @@ body{
     flex-direction: column;
     max-width: 380px;
     margin: 30px auto;
+    background-color: #fefcf5;
+    
 }
+
+h1{
+   color: #37443c;
+}
+h2{
+  color: #37443c;
+}
+
+h3{
+  color: #769382;
+}
+
+p{
+  color: #37443c;
+}
+hr{
+  color: #37443c;
+}
+.cures{
+  display: flex;
+  justify-content: center;
+  font-size: 30px; 
+  background-color: #e5ddc8; 
+  border-radius: 25px;
+}
+
+button{
+  background-color: #e5ddc8;
+  width: 50px;
+  height: 25px;
+  border: 0px;
+  border-radius: 25px;
+  margin-right: 10px;
+  color: #37443c;
+}
+
+.stepList {
+  list-style: none;
+  counter-reset: step;
+  padding-left: 0;
+  margin: 10px;
+}
+
+.stepList li {
+  counter-increment: step;
+  background-color: #b4d2c1;
+  color: #37443c;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 50px;
+  border-radius: 15px;
+}
+
+.stepList li::before {
+  color: #fefcf5;
+  content: counter(step) ".";
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  font-weight: bold;
+  font-size: 40px;
+  margin-right: 10px;
+  
+}
+
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.right{
+  display: flex;
+  justify-content: right;
+}
+
+.date{
+  display: flex;
+  background-color: #769382;
+  padding: 10px;
+  border-radius: 25px;
+  justify-content: center;
+  color: #fefcf5;
+  width: 300px;
+}
+
+.tipsContainer{
+  background-color: #e5ddc8;
+  padding: 10px;
+  border-radius: 25px;
+  color: #37443c;
+  margin: 10px;
+}
+
 .grid-container {
     display: grid;
    
@@ -14,7 +111,6 @@ body{
 }
 .grid-container-2 {
     display: grid;
-   
     grid-template-columns: repeat(1, 250);
     gap: 15px;
     justify-content: center;
@@ -24,6 +120,7 @@ body{
     font-size: 70px;
 }
 
+
 .indexCard {
     display: flex;
     justify-content: center;
@@ -31,18 +128,38 @@ body{
     height: 115px;
     width: 115px;
     background-color: #769382;
+    background-color: #e5ddc8;
     border-radius: 15px;
+    color: #37443c;
 
 }
 .indexCard2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 115px;
-    width: 250px;
-    background-color: #769382;
-    border-radius: 15px;
+    width: 350px;
+    height: 100px;
+    background-color: #b4d2c1;
+    color: #37443c;
+    border-radius: 25px;
 
+}
+
+.indexCard3 {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 100px;
+    color: #37443c;
+    font-size: 20px;
+    border-top: 1px solid #37443c;
+    
+   
+}
+
+.indexCard3 img{
+  width: 75px;
+  height: 75px;
 }
 
 .imgInbox{
@@ -57,8 +174,8 @@ body{
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: #333;
-    color: white;
+    background-color: #37443c;
+    color: #fefcf5;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -67,16 +184,76 @@ body{
     font-size: xx-large;
     /* make sure it’s on top of other content */
 }
+div.importantInfoBox{
+  background-color: #e5ddc8;
+  padding: 3px;
+  border-radius: 15px;   
+  border: 2px solid #ff3b30;
+}
+
+div.importantInfoBox ul li{
+  background-color: #e5ddc8;
+  font-weight: bold;
+  color: #ff3b30;
+}
+.contactDrBox {
+  background-color: #b4d2c1;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+.contactDrBox h3 {
+  color: #ff3b30;
+}
+.contactDrBox ul {
+  color: #37443c;
+}
+.measures{
+  background-color: #e5ddc8;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 25px;
+}
+.measures ul {
+  color: #37443c;
+}
 
 .symptoms {  
     list-style: none;
     padding: 0;
 }
 
+.pImportant {
+    font-weight: bold;
+    color: #ff3b30;
+}
+
 .symptoms li {
     margin-bottom: 10px;
-    background-color: #769382;
+    background-color: #37443c;
+    border-radius: 25px;
+    color: #fefcf5;
+}
+.symptoms li li{
+  background-color: #b4d2c1;
+  color: #37443c;
+  
+}
 
+.symptoms label{
+  display: flex;
+  padding: 15px;
+  
+}
+.treatmentContainer{
+  background-color: #e5ddc8;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.treatmentContainer ul{
+  color: #37443c;
 }
 
 /* Hide checkbox */
@@ -98,18 +275,20 @@ body{
     transition: max-height 0.3s ease;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: #333;
-
+    background-color: #b4d2c1;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 /* Show when checked */
 .symptoms input:checked+label+.content {
-    max-height: 900px;
+    max-height: 1000px;
     /* adjust if needed */
 }
 
 .pBold {
     font-weight: bold;
+    color: #37443c;
 }
 
 .pLink {
@@ -117,10 +296,7 @@ body{
     text-decoration: underline;
 }
 
-.pImportant {
-    font-weight: bold;
-    color: red;
-}
+
 
 .calendar {
     font-family: sans-serif;
@@ -131,14 +307,14 @@ body{
 .month {
     display: flex;
     width: 90%;
-    background: #1abc9c;
-    color: white;
-    
+    background: #769382;
+    color: #fefcf5;
     padding: 20px;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
+
 
 .weekdays,
 .days {
@@ -149,6 +325,7 @@ body{
     padding: 10px;
     margin: 0;
     margin-bottom: 10px;
+    color: #37443c;
     
 }
 .days li {
@@ -157,7 +334,9 @@ body{
 }
 
 .days li:hover {
-    background: #eee;
+    background: #e5ddc8;
+    border-radius: 25px;
+    width: 30px;
 }
 
 .days .appointment {
@@ -182,15 +361,16 @@ body{
   top: 50%;                     
   left: 50%;                     
   transform: translate(-50%, -50%); 
-  background-color: white;
-  border: 1px solid #ccc;
+  background-color: #fefcf5;
+  color: #37443c;
   padding: 20px 24px;
   border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 20px #33333372;
   z-index: 9999;                 
   width: 300px;
-  
-}
+};
+
+
 
 .inline{
     display: flex;
@@ -208,6 +388,10 @@ body{
   display: grid;
   gap: 10px;
   font-family: sans-serif;
+  background-color: #b4d2c1;
+  padding: 10px;
+  border-radius: 25px;
+  color: #37443c;
 }
 
 .timeline {
@@ -218,8 +402,8 @@ body{
 }
 
 .row {
-  display: grid;
-  grid-template-columns: 20px repeat(9, 1fr);
+  display:grid;
+  grid-template-columns: 120px repeat(9, 1fr);
   align-items: center;
 }
 
@@ -229,7 +413,7 @@ body{
 
 .bar {
   height: 20px;
-  background: #4caf50;
+  background: #769382;
   border-radius: 4px;
 }
 
@@ -245,7 +429,7 @@ body{
   width: 250px;
   border-radius: 16px;
   overflow: hidden;
-  background: white;
+  background: #e5ddc8;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -263,6 +447,7 @@ body{
 .card-title {
   margin: 0;
   font-size: 18px;
+  color: #37443c;
 }
 
 .card-description {
@@ -270,33 +455,34 @@ body{
   color: #666;
 }
 
-/* Hover effect like modern UI cards */
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 .filter-buttons {
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: center;
+    display: flex;
 }
 
 .filter-buttons button {
-    margin: 0 5px;
-    padding: 10px 15px;
+  margin-right: 2px;
+  margin-left: 2px;
+  width: 100px;
+  height: 50px;
     border: none;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: #37443c;
+    color: #fefcf5;
     transition: background-color 0.2s;
 }
 
-.filter-buttons button:hover {
-    background-color: #0056b3;
-}
 
 .profileImg{
   border-radius: 25px;
   height: 200px;
   width: 200px;
+}
+
+.logOutbtn{
+width: 100px;
 }

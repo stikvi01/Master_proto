@@ -9,24 +9,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-    <img class="profileImg" src="../img/Untitled_Artwork 27.jpg" alt="">
-    <h1>Sofie Bjørndalen</h1>
-    <div>
-        <div class="grid-container-2">
-            <div id="treatbtn" class="indexCard2">
-                <h2>Bruker innstillinger</h2>
-            </div>
-            <div id="treatbtn" class="indexCard2">
-                <h2>App innstilinger</h2>
-            </div>
-            <div id="treatbtn" class="indexCard2">
-                <h2>Tillgjengelighet</h2>
+<body">
+    <div class="center">
+        <img class="profileImg" src="../img/profile-02.png" alt="">
+        </div>
+        <h1 style="text-align: center;">Sofie Bjørndalen</h1>
+        <div>
+            <div class="grid-container-2">
+                <div id="treatbtn" class="indexCard2">
+                    <h2>Bruker innstillinger</h2>
+                </div>
+                <div id="treatbtn" class="indexCard2">
+                    <h2>App innstilinger</h2>
+                </div>
+                <div id="treatbtn" class="indexCard2">
+                    <h2>Tillgjengelighet</h2>
+                </div>
             </div>
         </div>
-    </div>
-    <br>
-    <button>Logg ut</button>
+        <br>
+        <button class="logOutbtn">Logg ut</button>
+    
+    <br><br><br>
     <div class="nav-bar">
         <div id="btnHome" class="navCard"><i class="fa fa-home" aria-hidden="true"></i></div>
         <div id="btnCalender" class="navCard"><i class="fa fa-calendar" aria-hidden="true"></i></div>
@@ -34,27 +38,27 @@
         <div id="btnProfile" class="navCard"><i class="fa fa-user" aria-hidden="true"></i></div>
     </div>
 
-</body>
-<script>
-    const btnHome = document.getElementById("btnHome");
-    const btnCalender = document.getElementById("btnCalender");
-    const btnInbox = document.getElementById("btnInbox");
-    const btnProfile = document.getElementById("btnProfile")
-    btnHome.addEventListener("click", () => {
-        window.location.href = "index.html"
-    });
+    </body>
+    <script>
+        const btnHome = document.getElementById("btnHome");
+        const btnCalender = document.getElementById("btnCalender");
+        const btnInbox = document.getElementById("btnInbox");
+        const btnProfile = document.getElementById("btnProfile")
+        btnHome.addEventListener("click", () => {
+            window.location.href = "index.html"
+        });
 
-    btnCalender.addEventListener("click", () => {
-        window.location.href = "calender.html"
-    });
+        btnCalender.addEventListener("click", () => {
+            window.location.href = "calender.html"
+        });
 
-    btnInbox.addEventListener("click", () => {
-        window.location.href = "inbox.html"
-    });
+        btnInbox.addEventListener("click", () => {
+            window.location.href = "inbox.html"
+        });
 
-    btnProfile.addEventListener("click", () => {
-        window.location.href = "profile.html"
-    });
-</script>
+        btnProfile.addEventListener("click", () => {
+            window.location.href = "profile.html"
+        });
+    </script>
 
 </html>
