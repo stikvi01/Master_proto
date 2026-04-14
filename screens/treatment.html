@@ -11,14 +11,14 @@
 
 <body>
     <div class="right">
-    <button id="btnBack"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></button>
+        <button id="btnBack"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></button>
     </div>
     <h1>Min behandling</h1>
     <h2>Cellegift</h2>
     <div>
         <h3>Kurer gjennomført:</h3>
         <div class="cures">
-        <h1 >7/10</h1>
+            <h1>7/10</h1>
         </div>
         <h3>Neste kur: 17. April</h3>
     </div>
@@ -104,11 +104,18 @@
 
     </ul>
     <div class="grid-container">
-        <div id="treatbtn" class="indexCard">Prøve Resultater</div>
-        <div id="sympbtn" class="indexCard">Notater</div>
-        <div id="impbtn" class="indexCard">Dokumenter</div>
+        <div id="testAnsbtn" class="indexCard">Prøve Resultater</div>
+        <div id="notesbtn" class="indexCard">Notater</div>
+        <div id="docubtn" class="indexCard">Dokumenter</div>
     </div>
-<br><br><br>
+
+    <br>
+    <div class="grid-container-2">
+        <div id="altbtn" class="indexCard2">Andre behandlinger</div>
+    </div>
+
+
+    <br><br><br>
     <div class="nav-bar">
         <div id="btnHome" class="navCard"><i class="fa fa-home" aria-hidden="true"></i></div>
         <div id="btnCalender" class="navCard"><i class="fa fa-calendar" aria-hidden="true"></i></div>
@@ -121,6 +128,8 @@
         const btnInbox = document.getElementById("btnInbox");
         const btnProfile = document.getElementById("btnProfile");
         const btnBack = document.getElementById("btnBack");
+        const altbtn = document.getElementById("altbtn");
+        const testAnsbtn = document.getElementById("testAnsbtn");
 
         btnHome.addEventListener("click", () => {
             window.location.href = "index.html"
@@ -139,7 +148,14 @@
         });
 
         btnBack.addEventListener("click", () => {
-            window.location.href = "treatmentNav.html"
+            window.location.href = "index.html"
+        });
+
+        altbtn.addEventListener("click", () => {
+            window.location.href = "alternatives.html"
+        });
+        testAnsbtn.addEventListener("click", () => {
+            window.location.href = "testAns.html"
         });
 
 

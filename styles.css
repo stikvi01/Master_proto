@@ -1,39 +1,41 @@
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 380px;
+  margin: 30px auto;
+  background-color: #fefcf5;
 
-body{
-    display: flex;
-    flex-direction: column;
-    max-width: 380px;
-    margin: 30px auto;
-    background-color: #fefcf5;
-    
 }
 
-h1{
-   color: #37443c;
-}
-h2{
+h1 {
   color: #37443c;
 }
 
-h3{
+h2 {
+  color: #37443c;
+}
+
+h3 {
   color: #769382;
 }
 
-p{
+p {
   color: #37443c;
 }
-hr{
+
+hr {
   color: #37443c;
 }
-.cures{
+
+.cures {
   display: flex;
   justify-content: center;
-  font-size: 30px; 
-  background-color: #e5ddc8; 
+  font-size: 30px;
+  background-color: #e5ddc8;
   border-radius: 25px;
 }
 
-button{
+button {
   background-color: #e5ddc8;
   width: 50px;
   height: 25px;
@@ -70,21 +72,27 @@ button{
   font-weight: bold;
   font-size: 40px;
   margin-right: 10px;
-  
+
 }
 
 
-.center{
+.center {
   display: flex;
   justify-content: center;
 }
 
-.right{
+.right {
   display: flex;
   justify-content: right;
 }
 
-.date{
+.left {
+  display: flex;
+  justify-content: left;
+}
+
+
+.date {
   display: flex;
   background-color: #769382;
   padding: 10px;
@@ -94,7 +102,8 @@ button{
   width: 300px;
 }
 
-.tipsContainer{
+
+.tipsContainer {
   background-color: #e5ddc8;
   padding: 10px;
   border-radius: 25px;
@@ -103,99 +112,156 @@ button{
 }
 
 .grid-container {
-    display: grid;
-   
-    grid-template-columns: repeat(3, 115px);
-    gap: 15px;
-    justify-content: center;
+  display: grid;
+
+  grid-template-columns: repeat(3, 115px);
+  gap: 15px;
+  justify-content: center;
 }
+
 .grid-container-2 {
-    display: grid;
-    grid-template-columns: repeat(1, 250);
-    gap: 15px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(1, 250);
+  gap: 15px;
+  justify-content: center;
 }
 
 #plussbtn {
-    font-size: 70px;
+  font-size: 70px;
 }
 
 
 .indexCard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 115px;
-    width: 115px;
-    background-color: #769382;
-    background-color: #e5ddc8;
-    border-radius: 15px;
-    color: #37443c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 115px;
+  width: 115px;
+  background-color: #769382;
+  background-color: #e5ddc8;
+  border-radius: 15px;
+  color: #37443c;
 
 }
+
 .indexCard2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 100px;
-    background-color: #b4d2c1;
-    color: #37443c;
-    border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 100px;
+  background-color: #b4d2c1;
+  color: #37443c;
+  border-radius: 25px;
 
 }
 
 .indexCard3 {
-    display: flex;
-    align-items: center;
-    width: 350px;
-    height: 100px;
-    color: #37443c;
-    font-size: 20px;
-    border-top: 1px solid #37443c;
-    
-   
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 100px;
+  color: #37443c;
+  font-size: 20px;
+  border-top: 1px solid #37443c;
+
+
 }
 
-.indexCard3 img{
+.indexCard3 img {
   width: 75px;
   height: 75px;
 }
 
-.imgInbox{
+.imgInbox {
   width: 50px;
   height: 50px;
   padding-right: 20px;
 }
 
-.nav-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #37443c;
-    color: #fefcf5;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    /* optional */
-    z-index: 1000;
-    font-size: xx-large;
-    /* make sure it’s on top of other content */
+.msg {
+  background-color: #e5ddc8;
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  bottom: 60px;
+  left: 0;
+
+  display: flex;
+  align-items: center;  
+  justify-content: center; 
 }
-div.importantInfoBox{
+.inpField {
+  background-color: #fefcf5;
+  height: 18px;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.cool-box {
+  border: 8px groove yellow; /* High-contrast colors work best */
+  border-radius: 15px;      /* Always adds a modern feel */
+}
+
+.msg2 {
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+  background-color: #b4d2c1;
+}
+
+.msg3 {
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+  background-color: #b4d2c1;
+}
+
+.msg1 {
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  border-radius: 20px;
+  border-bottom-right-radius: 0px;
+  background-color: #b4d2c1;
+}
+
+
+
+.nav-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #37443c;
+  color: #fefcf5;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* optional */
+  z-index: 1000;
+  font-size: xx-large;
+  /* make sure it’s on top of other content */
+}
+
+div.importantInfoBox {
   background-color: #e5ddc8;
   padding: 3px;
-  border-radius: 15px;   
+  border-radius: 15px;
   border: 2px solid #ff3b30;
 }
 
-div.importantInfoBox ul li{
+div.importantInfoBox ul li {
   background-color: #e5ddc8;
   font-weight: bold;
   color: #ff3b30;
 }
+
 .contactDrBox {
   background-color: #b4d2c1;
   padding: 10px;
@@ -206,180 +272,188 @@ div.importantInfoBox ul li{
 .contactDrBox h3 {
   color: #ff3b30;
 }
+
 .contactDrBox ul {
   color: #37443c;
 }
-.measures{
+
+.measures {
   background-color: #e5ddc8;
   padding: 10px;
   margin: 10px;
   border-radius: 25px;
 }
+
 .measures ul {
   color: #37443c;
 }
 
-.symptoms {  
-    list-style: none;
-    padding: 0;
+.symptoms {
+  list-style: none;
+  padding: 0;
 }
 
 .pImportant {
-    font-weight: bold;
-    color: #ff3b30;
+  font-weight: bold;
+  color: #ff3b30;
 }
 
 .symptoms li {
-    margin-bottom: 10px;
-    background-color: #37443c;
-    border-radius: 25px;
-    color: #fefcf5;
-}
-.symptoms li li{
-  background-color: #b4d2c1;
-  color: #37443c;
-  
+  margin-bottom: 10px;
+  background-color: #37443c;
+  border-radius: 25px;
+  color: #fefcf5;
 }
 
-.symptoms label{
+.symptoms li li {
+  background-color: #b4d2c1;
+  color: #37443c;
+
+}
+
+.symptoms label {
   display: flex;
   padding: 15px;
-  
+
 }
-.treatmentContainer{
+
+.treatmentContainer {
   background-color: #e5ddc8;
   padding: 5px;
   border-radius: 25px;
 }
 
-.treatmentContainer ul{
+.treatmentContainer ul {
   color: #37443c;
 }
 
 /* Hide checkbox */
 .symptoms input {
-    display: none;
+  display: none;
 }
 
 /* Clickable label */
 .symptoms label {
-    cursor: pointer;
-    font-weight: bold;
-    display: block;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
 }
 
 /* Hidden content */
 .content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #b4d2c1;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #b4d2c1;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 /* Show when checked */
 .symptoms input:checked+label+.content {
-    max-height: 1000px;
-    /* adjust if needed */
+  max-height: 1000px;
+  /* adjust if needed */
 }
 
 .pBold {
-    font-weight: bold;
-    color: #37443c;
+  font-weight: bold;
+  color: #37443c;
 }
 
 .pLink {
-    color: blue;
-    text-decoration: underline;
+  color: blue;
+  text-decoration: underline;
 }
 
 
 
 .calendar {
-    font-family: sans-serif;
-    font-size: 24px;
-    width: 100%;
+  font-family: sans-serif;
+  font-size: 24px;
+  width: 100%;
 }
 
 .month {
-    display: flex;
-    width: 90%;
-    background: #769382;
-    color: #fefcf5;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  width: 90%;
+  background: #769382;
+  color: #fefcf5;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 
 .weekdays,
 .days {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    list-style: none;
-    padding: 10px;
-    margin: 0;
-    margin-bottom: 10px;
-    color: #37443c;
-    
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #37443c;
+
 }
+
 .days li {
-    
-    margin-bottom: 50px;
+
+  margin-bottom: 50px;
 }
 
 .days li:hover {
-    background: #e5ddc8;
-    border-radius: 25px;
-    width: 30px;
+  background: #e5ddc8;
+  border-radius: 25px;
+  width: 30px;
 }
 
 .days .appointment {
-  position: relative; 
+  position: relative;
 }
 
 .days .appointment::after {
-  content: '';               
-  width: 10px;                
+  content: '';
+  width: 10px;
   height: 10px;
-  background-color: rgb(99, 99, 99);     
-  border-radius: 50%;        
+  background-color: rgb(99, 99, 99);
+  border-radius: 50%;
   position: absolute;
-  bottom: -15px;               
-  left: 27%;                 
+  bottom: -15px;
+  left: 27%;
   transform: translateX(-50%);
 }
 
-#infoMsg{
-  display: none;                
-  position: fixed;               
-  top: 50%;                     
-  left: 50%;                     
-  transform: translate(-50%, -50%); 
+#infoMsg {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #fefcf5;
   color: #37443c;
   padding: 20px 24px;
   border-radius: 8px;
   box-shadow: 0 8px 20px #33333372;
-  z-index: 9999;                 
+  z-index: 9999;
   width: 300px;
-};
-
-
-
-.inline{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
 }
 
-.infoClose{
-    margin-top: 12px;
+;
+
+
+
+.inline {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.infoClose {
+  margin-top: 12px;
   padding: 6px 10px;
   cursor: pointer;
 }
@@ -402,7 +476,7 @@ div.importantInfoBox ul li{
 }
 
 .row {
-  display:grid;
+  display: grid;
   grid-template-columns: 120px repeat(9, 1fr);
   align-items: center;
 }
@@ -430,7 +504,7 @@ div.importantInfoBox ul li{
   border-radius: 16px;
   overflow: hidden;
   background: #e5ddc8;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -457,12 +531,13 @@ div.importantInfoBox ul li{
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
 .filter-buttons {
-    margin: 10px 0;
-    text-align: center;
-    display: flex;
+  margin: 10px 0;
+  text-align: center;
+  display: flex;
 }
 
 .filter-buttons button {
@@ -470,19 +545,19 @@ div.importantInfoBox ul li{
   margin-left: 2px;
   width: 100px;
   height: 50px;
-    border: none;
-    background-color: #37443c;
-    color: #fefcf5;
-    transition: background-color 0.2s;
+  border: none;
+  background-color: #37443c;
+  color: #fefcf5;
+  transition: background-color 0.2s;
 }
 
 
-.profileImg{
+.profileImg {
   border-radius: 25px;
   height: 200px;
   width: 200px;
 }
 
-.logOutbtn{
-width: 100px;
+.logOutbtn {
+  width: 100px;
 }

@@ -13,21 +13,21 @@
     <h1>Innboks</h1>
     <div>
         <div class="grid-container-3">
-            <div id="treatbtn" class="indexCard3">
+            <div id="DrHansen" class="indexCard3">
                 <img class="imgInbox" src="../img/profile-01.png" alt="">
                 <h2>Dr. Hansen</h2>
             </div>
-            <div id="treatbtn" class="indexCard3">
+            <div id="Turid" class="indexCard3">
                 <img class="imgInbox" src="../img/profile-02.png" alt="">
 
                 <h2>Turid</h2>
             </div>
-            <div id="treatbtn" class="indexCard3">
+            <div id="Kåre" class="indexCard3">
                 <img class="imgInbox" src="../img/profile-03.png" alt="">
 
                 <h2>Kåre</h2>
             </div>
-            <div id="treatbtn" class="indexCard3">
+            <div id="DrArne" class="indexCard3">
                 <img class="imgInbox" src="../img/profile-04.png" alt="">
 
                 <h2>Dr. Arne</h2>
@@ -47,7 +47,9 @@
     const btnHome = document.getElementById("btnHome");
     const btnCalender = document.getElementById("btnCalender");
     const btnInbox = document.getElementById("btnInbox");
-    const btnProfile = document.getElementById("btnProfile")
+    const btnProfile = document.getElementById("btnProfile");
+    const DrHansen = document.getElementById("DrHansen");
+
     btnHome.addEventListener("click", () => {
         window.location.href = "index.html"
     });
@@ -62,6 +64,9 @@
 
     btnProfile.addEventListener("click", () => {
         window.location.href = "profile.html"
+    });
+    DrHansen.addEventListener("click", () => {
+        window.location.href = "msg.html"
     });
 </script>
 
