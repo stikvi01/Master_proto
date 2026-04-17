@@ -4,7 +4,6 @@ body {
   max-width: 380px;
   margin: 30px auto;
   background-color: #fefcf5;
-
 }
 
 h1 {
@@ -75,7 +74,6 @@ button {
 
 }
 
-
 .center {
   display: flex;
   justify-content: center;
@@ -91,7 +89,6 @@ button {
   justify-content: left;
 }
 
-
 .date {
   display: flex;
   background-color: #769382;
@@ -101,7 +98,6 @@ button {
   color: #fefcf5;
   width: 300px;
 }
-
 
 .tipsContainer {
   background-color: #e5ddc8;
@@ -130,7 +126,6 @@ button {
   font-size: 70px;
 }
 
-
 .indexCard {
   display: flex;
   justify-content: center;
@@ -141,7 +136,6 @@ button {
   background-color: #e5ddc8;
   border-radius: 15px;
   color: #37443c;
-
 }
 
 .indexCard2 {
@@ -153,7 +147,6 @@ button {
   background-color: #b4d2c1;
   color: #37443c;
   border-radius: 25px;
-
 }
 
 .indexCard3 {
@@ -164,8 +157,6 @@ button {
   color: #37443c;
   font-size: 20px;
   border-top: 1px solid #37443c;
-
-
 }
 
 .indexCard3 img {
@@ -186,11 +177,11 @@ button {
   height: 30px;
   bottom: 60px;
   left: 0;
-
   display: flex;
-  align-items: center;  
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
 }
+
 .inpField {
   background-color: #fefcf5;
   height: 18px;
@@ -199,8 +190,8 @@ button {
 }
 
 .cool-box {
-  border: 8px groove yellow; /* High-contrast colors work best */
-  border-radius: 15px;      /* Always adds a modern feel */
+  border: 8px groove yellow;
+  border-radius: 15px;
 }
 
 .msg2 {
@@ -230,8 +221,6 @@ button {
   background-color: #b4d2c1;
 }
 
-
-
 .nav-bar {
   position: fixed;
   bottom: 0;
@@ -243,10 +232,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* optional */
   z-index: 1000;
   font-size: xx-large;
-  /* make sure it’s on top of other content */
 }
 
 div.importantInfoBox {
@@ -327,19 +314,16 @@ div.importantInfoBox ul li {
   color: #37443c;
 }
 
-/* Hide checkbox */
 .symptoms input {
   display: none;
 }
 
-/* Clickable label */
 .symptoms label {
   cursor: pointer;
   font-weight: bold;
   display: block;
 }
 
-/* Hidden content */
 .content {
   max-height: 0;
   overflow: hidden;
@@ -351,10 +335,8 @@ div.importantInfoBox ul li {
   border-bottom-right-radius: 25px;
 }
 
-/* Show when checked */
 .symptoms input:checked+label+.content {
   max-height: 1000px;
-  /* adjust if needed */
 }
 
 .pBold {
@@ -366,8 +348,6 @@ div.importantInfoBox ul li {
   color: blue;
   text-decoration: underline;
 }
-
-
 
 .calendar {
   font-family: sans-serif;
@@ -386,7 +366,6 @@ div.importantInfoBox ul li {
   gap: 10px;
 }
 
-
 .weekdays,
 .days {
   width: 100%;
@@ -397,11 +376,9 @@ div.importantInfoBox ul li {
   margin: 0;
   margin-bottom: 10px;
   color: #37443c;
-
 }
 
 .days li {
-
   margin-bottom: 50px;
 }
 
@@ -441,10 +418,6 @@ div.importantInfoBox ul li {
   z-index: 9999;
   width: 300px;
 }
-
-;
-
-
 
 .inline {
   display: flex;
@@ -498,7 +471,6 @@ div.importantInfoBox ul li {
   padding: 20px;
 }
 
-
 .card {
   width: 250px;
   border-radius: 16px;
@@ -550,7 +522,6 @@ div.importantInfoBox ul li {
   color: #fefcf5;
   transition: background-color 0.2s;
 }
-
 
 .profileImg {
   border-radius: 25px;

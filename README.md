@@ -1,5 +1,3 @@
-# Master_proto
-Proto type for master project 
 # Master Thesis Prototype – Information Design for Cognitive Overload
 
 ## Overview
